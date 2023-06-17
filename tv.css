@@ -163,3 +163,124 @@ img:hover {
         transform: translate(0px, 0px);
     }
 }
+@media (min-width: 1281px) {
+    img{}
+   .anh{}
+   .header-as-paragraph{}
+   h1{}
+   .header{}
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    img {
+
+    }
+
+    .anh {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .header-as-paragraph {
+    }
+
+    h1 {
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    img {
+
+    }
+
+    .anh {
+        
+    }
+    .header-as-paragraph {
+    }
+
+    h1 {
+    font-size: 5vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    img {
+        width:25vh;
+    }
+    img:hover
+    {
+        transform:rotate(360deg)
+    }
+    .anh {
+    }
+    .header-as-paragraph {
+        margin-top: unset;
+    }
+    h1 {
+        margin-bottom:20px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    main {
+        height:100%;
+    }
+    img:nth-child(1):hover {
+        width: 25vh;
+        transform: translateX(40px);
+    }
+
+    img:nth-child(2):hover {
+        width: 25vh;
+        transform: translateX(-40px);
+    }
+
+    img:nth-child(3):hover {
+        width: 25vh;
+        transform: translateX(40px);
+    }
+
+    img:nth-child(4):hover {
+        width: 25vh;
+        transform: translateX(-40px);
+    }
+    .anh {
+        margin-left:20%
+    }
+
+    .header-as-paragraph {
+        margin-top:unset;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    img:nth-child(1):hover {
+        width: 25vh;
+        transform:translateX(40px);
+    }
+    img:nth-child(2):hover {
+        width: 25vh;
+        transform: translateX(-40px);
+    }
+    img:nth-child(3):hover {
+        width: 25vh;
+        transform: translateX(40px);
+    }
+    img:nth-child(4):hover {
+        width: 25vh;
+        transform: translateX(-40px);
+    }
+    .anh {
+    }
+
+    .header-as-paragraph {
+        font-size:medium;
+    }
+
+    h1 {
+        font-size:5vh;
+    }
+}
