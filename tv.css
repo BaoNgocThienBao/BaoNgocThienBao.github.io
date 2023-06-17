@@ -1,0 +1,165 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    background-image: url("backgroundright.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+}
+img {
+    align-items:center;
+    width:25vh;
+    position:relative;
+}
+div
+{
+    height:100vh;
+    overflow:hidden;
+}
+.anh {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 1rem;
+}
+.header-as-paragraph
+{
+    font-size:50px;
+    font-family:cursive;
+}
+h1
+{
+   font-size:70px;
+}
+.header
+{
+    animation-duration:4s;
+    animation-name:lala;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+}
+img:hover {
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+    animation-duration:2s;
+    animation-name:uptotop;
+    animation-timing-function:ease-in-out;
+}
+@keyframes lala{
+    0%
+    {
+        margin-left:100%;
+        width:100%
+    }
+    50% {
+        margin-left: 0%;
+        width: 100%
+    }
+    100%
+    {
+    margin-left:-200%;
+    width:100%;
+    }
+}
+.animate-charcter {
+    background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100% );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    outline-color:brown;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+.text_shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: bungee, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+    //color: transparent;
+    //background-color: white;
+    //background-clip: text;
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+
+    10% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    20% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    }
+
+    30% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+
+    40% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+
+    50% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+
+    60% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+
+    70% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    }
+
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    40% {
+        transform: translate(-12px, -12px);
+    }
+
+    50% {
+        transform: translate(-12px, -12px);
+    }
+
+    60% {
+        transform: translate(-12px, -12px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
